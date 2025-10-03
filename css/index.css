@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    padding: 20px;
+}
+
+.sidebar label {
+    display: block;
+    margin: 8px 0;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.movie-video iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-description {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Movie Cards */
+.movie-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.stars {
+    color: orange;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    font-weight: bold;
+}
